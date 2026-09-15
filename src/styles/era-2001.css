@@ -22,7 +22,7 @@
 }
 
 .s2-scene {
-  height: 420vh;
+  height: 330vh;
 }
 .s2-sticky {
   display: grid;
@@ -210,7 +210,7 @@
 .s2-site {
   max-width: 980px;
   margin: 0 auto;
-  padding: 40px 16px 140px;
+  padding: 32px 16px 96px;
 }
 .s2-window {
   background: #ece9f5;

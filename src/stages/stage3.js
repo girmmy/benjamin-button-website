@@ -127,10 +127,10 @@ export function markup(s) {
           <div class="s3-posts">
             ${s.diary
               .map((d) => {
-                const [month, day] = d.date.split(/[ ,]+/);
+                const [month, year] = d.date.split(/[ ,]+/);
                 return `
               <article class="s3-post">
-                <div class="s3-cal" aria-hidden="true"><b>${month.slice(0, 3)}</b><i>${day}</i></div>
+                <div class="s3-cal" aria-hidden="true"><b>${month.slice(0, 3)}</b><i>${year}</i></div>
                 <div class="s3-post__main">
                   <h2 class="s3-post__title">${d.title}</h2>
                   <p class="s3-post__by">Posted by Benjamin on ${d.date}</p>

@@ -18,7 +18,7 @@
 }
 
 .s3-scene {
-  height: 440vh;
+  height: 340vh;
 }
 .s3-sticky {
   --drift: 0;
@@ -253,7 +253,7 @@
 
 /* The blog below */
 .s3-site {
-  padding: 40px 16px 140px;
+  padding: 32px 16px 96px;
 }
 .s3-shell {
   max-width: 980px;
@@ -354,7 +354,7 @@
   background: linear-gradient(#ff8a7a, #e0281b);
 }
 .s3-cal i {
-  font: 700 24px/1.3 'Helvetica Neue', Arial, sans-serif;
+  font: 700 17px/2 'Helvetica Neue', Arial, sans-serif;
   font-style: normal;
 }
 .s3-post__title {

@@ -17,7 +17,7 @@
 }
 
 .s1-scene {
-  height: 380vh;
+  height: 300vh;
 }
 .s1-sticky {
   --coarse: 0;
@@ -191,7 +191,7 @@
   position: relative;
   max-width: 760px;
   margin: 0 auto;
-  padding: 48px 16px 120px;
+  padding: 40px 16px 88px;
   font-size: 17px;
   line-height: 1.45;
 }

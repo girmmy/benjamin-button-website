@@ -142,7 +142,7 @@ export function markup(s) {
                 <h1 class="s2-title" id="s2-title">${s.title}</h1>
                 <p class="s2-year" data-s2-year>1880</p>
               </div>
-              <p class="s2-lower" aria-live="off"><span data-s2-lower>the Shevlins’ dance, Baltimore</span></p>
+              <p class="s2-lower" aria-live="off"><span data-s2-lower>the Shevlins’ country house, august 1880</span></p>
               <a class="s2-skip" href="#s2-site">skip intro &raquo;</a>
             </div>
             <div class="s2-movie__nav" aria-hidden="true">
@@ -243,9 +243,9 @@ export function markup(s) {
 }
 
 const LOWER = [
-  [0, 'the Shevlins’ dance, Baltimore'],
-  [0.36, 'married, to the surprise of Baltimore'],
-  [0.68, 'a son, and a store that doubled'],
+  [0, 'the Shevlins’ country house, august 1880'],
+  [0.36, 'married, and Baltimore never quite recovered'],
+  [0.68, 'a son, and a family fortune that doubled'],
 ];
 
 export function init({ ScrollTrigger }) {

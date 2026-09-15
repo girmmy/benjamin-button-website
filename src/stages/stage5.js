@@ -11,13 +11,18 @@ const LETTERS = 'BENJAMIN'.split('');
 const BLOCK_TINTS = ['#ffcbb6', '#d7d1ff', '#c6ecfa', '#ffe3a6', '#ffcbb6', '#d7d1ff', '#c6ecfa', '#ffe3a6'];
 
 const CHIP_ICON = {
-  blocks: '<rect x="3" y="11" width="8" height="8" rx="2"/><rect x="13" y="11" width="8" height="8" rx="2"/><rect x="8" y="3" width="8" height="8" rx="2"/>',
+  paper: '<rect x="3" y="4" width="8" height="8" rx="1.5"/><rect x="12" y="9" width="8" height="8" rx="1.5"/><rect x="6" y="13" width="6" height="6" rx="1.5"/>',
   nana: '<path d="M12 3a6 6 0 0 1 6 6c0 5-6 12-6 12S6 14 6 9a6 6 0 0 1 6-6z"/>',
   milk: '<path d="M9 2h6v3l2 3v12a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V8l2-3z"/>',
   crib: '<path d="M4 8v12M20 8v12M4 11h16M4 18h16M8 11v7M12 11v7M16 11v7" stroke="currentColor" stroke-width="1.6" fill="none"/>',
 };
 
-const LAST = ['He did not remember San Juan Hill.', 'Or Hildegarde.', 'Only the crib, and Nana, and warm milk.', 'Then it was all dark.'];
+const LAST = [
+  'The charge up San Juan Hill faded.',
+  'So did the first years with Hildegarde.',
+  'So did the nights with his grandfather.',
+  'Then it was all dark.',
+];
 
 export function markup(s) {
   return `
@@ -28,11 +33,11 @@ export function markup(s) {
         <div class="s5-bento">
           <div class="s5-tile s5-tile--title">
             <h1 class="s5-title" id="s5-title">${s.title}</h1>
-            <p class="s5-forget"><span class="s5-text">Kindergarten, 1920. He sits next to Roscoe’s boy.</span><span class="s5-skel" aria-hidden="true"></span></p>
+            <p class="s5-forget"><span class="s5-text">1925. Roscoe takes his own boy and his father to kindergarten on the same day.</span><span class="s5-skel" aria-hidden="true"></span></p>
           </div>
           <div class="s5-tile s5-tile--fig"><div class="s5-actor"></div></div>
           <div class="s5-tile s5-tile--blocks">
-            <div class="s5-blocks" role="img" aria-label="Alphabet blocks spelling BENJAMIN, falling away one by one">
+            <div class="s5-blocks" role="img" aria-label="Squares of coloured paper spelling BENJAMIN, falling away one by one">
               ${LETTERS.map((l, i) => `<span class="s5-block" style="--tint:${BLOCK_TINTS[i]}">${l}</span>`).join('')}
             </div>
           </div>
@@ -47,11 +52,11 @@ export function markup(s) {
               <path d="M30 26h20v14q14 6 14 22v62q0 10-10 10H26q-10 0-10-10V62q0-16 14-22z" fill="none" stroke="#fff" stroke-width="2.5"/>
               <path d="M23 66v52" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".8"/>
             </svg>
-            <p class="s5-forget s5-forget--small"><span class="s5-text">Nana warms it.</span><span class="s5-skel" aria-hidden="true"></span></p>
+            <p class="s5-forget s5-forget--small"><span class="s5-text">Oatmeal and warm milk at five.</span><span class="s5-skel" aria-hidden="true"></span></p>
           </div>
           <div class="s5-tile s5-tile--note">
-            <p class="s5-forget"><span class="s5-text">Miss Bailey says his tower is very good.</span><span class="s5-skel" aria-hidden="true"></span></p>
-            <p class="s5-forget"><span class="s5-text">He cannot remember what the letters spell.</span><span class="s5-skel" aria-hidden="true"></span></p>
+            <p class="s5-forget"><span class="s5-text">Miss Bailey’s hand rests for a moment in his tousled hair.</span><span class="s5-skel" aria-hidden="true"></span></p>
+            <p class="s5-forget"><span class="s5-text">By the third year he is too little to understand what the bright strips are for.</span><span class="s5-skel" aria-hidden="true"></span></p>
           </div>
           <div class="s5-tile s5-tile--year"><span data-s5-year>1920</span></div>
         </div>

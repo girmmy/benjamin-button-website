@@ -19,7 +19,7 @@
 }
 
 .s5-sceneA {
-  height: 420vh;
+  height: 330vh;
 }
 .s5-stickyA {
   --wght: 760;
@@ -206,7 +206,7 @@
   gap: 16px;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 24px 16px 120px;
+  padding: 24px 16px 88px;
   align-items: start;
   background: transparent;
 }
@@ -384,7 +384,7 @@
 
 /* The last scene: night, a lamp, a newborn, then nothing */
 .s5-sceneB {
-  height: 420vh;
+  height: 320vh;
 }
 .s5-stickyB {
   --dusk: 0;

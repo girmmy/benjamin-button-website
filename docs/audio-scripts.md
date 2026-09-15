@@ -1,6 +1,6 @@
 # Audio scripts
 
-Each stage has one short recording of "Benjamin" looking back on that part of his life. The site currently plays placeholder narration made with the macOS `say` command. To use a real recording:
+Each stage has one short recording of "Benjamin" looking back on that part of his life. Every line is drawn from Fitzgerald's story. The site currently plays placeholder narration made with the macOS `say` command. To use a real recording:
 
 1. Record the script below. Aim for 15–25 seconds and one take per stage.
 2. Export it as `.m4a` (AAC) or `.mp3`.
@@ -11,23 +11,23 @@ Voice direction: as the site goes on, Benjamin should sound younger. Start slow 
 
 ## Stage 1: The End (1860–1880)
 
-> I was born an old man. My father looked at me like a bill he would have to pay. People see the beard and the cane and they think they are looking at the end of a life. I am starting to think it is the beginning of one.
+> They gave me a rattle on the first day and told me to play with it, so I jingled it whenever anyone was listening. I would rather have my father's Havana cigars and a volume of the encyclopaedia. People look at the beard and think they are seeing the end of a life. It is the first week of one.
 
 ## Stage 2: The Family (1880–1897)
 
-> Hildegarde liked that I seemed wise. The truth is I was learning everything for the first time, same as her. We had a boy. For a few good years, the three of us looked like a family anyone would recognize.
+> Hildegarde married me because I looked fifty and settled. In the fifteen years after the wedding the family fortune doubled, and every morning the blood moved a little faster than the morning before. I was the first man in Baltimore to own and run an automobile. My wife was less delighted by all of this than I was.
 
 ## Stage 3: The Height of Life (1897–1910)
 
-> They would call this the height of a life. Every year I felt stronger while everyone I loved got tired. I kept going out dancing. I think I was running from watching her grow old.
+> I joined the army in ninety-eight because my own house had stopped being interesting. I came home a lieutenant-colonel with a medal and found that I looked thirty. I had hoped that once I caught up with my own age the thing would stop. It did not stop.
 
 ## Stage 4: The Beginning of Youth (1910–1920)
 
-> I went back to school and I won. I tried to go back to war and they sent me home. My son is embarrassed by me now. Youth is supposed to feel like a start. Mine felt like being left behind.
+> In my first year at Harvard the whole college knew my name. By my senior year I could not make the team, and a sophomore took me for a freshman. Then the Army made me a general and a sentry called me sonny. My son would like me to call him Uncle.
 
 ## Stage 5: The Beginning (1920–1930)
 
-> There are blocks. And Nana. And the milk is warm. I don't remember a war. I don't remember her name. Everything is soft, and then it's dark, and it's quiet.
+> There is Nana, and the park, and the big orange ball she points at and calls sun. There are bright strips of paper I can no longer understand. I do not remember a war. I do not remember her name. When I am hungry I cry. That is all.
 
 ## Regenerating the placeholders
 

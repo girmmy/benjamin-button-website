@@ -116,16 +116,16 @@ export const ARTIFACTS = {
     <text x="200" y="148" text-anchor="middle" ${FELL} font-size="12" font-style="italic">Office of the Registrar, New Haven</text>
     <path d="M70 162 H330" stroke="#000"/>
     <text ${FELL} font-size="14">
-      <tspan x="60" y="192">September the 9th, 1878</tspan>
-      <tspan x="60" y="226">Sir,</tspan>
-      <tspan x="72" y="250">We are in receipt of your application to enter</tspan>
-      <tspan x="60" y="272">the Freshman class. The Faculty does not find the</tspan>
-      <tspan x="60" y="294">matter amusing. A gentleman of your evident years</tspan>
-      <tspan x="60" y="316">will not be admitted as a Freshman, and is asked</tspan>
-      <tspan x="60" y="338">not to present himself at this office again.</tspan>
+      <tspan x="60" y="192">September, 1878</tspan>
+      <tspan x="60" y="226">Mr. Benjamin Button,</tspan>
+      <tspan x="72" y="250">Our card gives your age as eighteen. Surely you</tspan>
+      <tspan x="60" y="272">do not expect this office to believe that. Get out</tspan>
+      <tspan x="60" y="294">of college and get out of town. You have eighteen</tspan>
+      <tspan x="60" y="316">minutes, which is one for every year you claim.</tspan>
+      <tspan x="60" y="338">You are a dangerous lunatic.</tspan>
       <tspan x="220" y="384">Respectfully,</tspan>
     </text>
-    <text x="220" y="420" ${SCRIPT} font-size="30">the Registrar</text>
+    <text x="220" y="420" ${SCRIPT} font-size="30">Mr. Hart</text>
     <rect x="46" y="400" width="70" height="42" fill="url(#ya50)" transform="rotate(-12 80 420)"/>
   </svg>`,
 
@@ -276,34 +276,48 @@ export const ARTIFACTS = {
     <rect x="0" y="290" width="480" height="70" fill="url(#me-fade)"/>
   </svg>`,
 
-  shoes: `
-  <svg viewBox="0 0 480 360" role="img" aria-label="A pair of shiny patent leather dancing shoes on a reflective floor">
+  motorcar: `
+  <svg viewBox="0 0 480 360" role="img" aria-label="An early motorcar with brass lamps, parked on a shiny floor">
     <defs>
-      <linearGradient id="sh-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b3f63"/><stop offset=".62" stop-color="#101a2d"/><stop offset=".62" stop-color="#0a1120"/><stop offset="1" stop-color="#1a2842"/></linearGradient>
-      <linearGradient id="sh-leather" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a4f5c"/><stop offset=".5" stop-color="#0d0f14"/><stop offset="1" stop-color="#000"/></linearGradient>
-      <linearGradient id="sh-shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
-      <radialGradient id="sh-spot" cx=".5" cy="0" r=".8"><stop offset="0" stop-color="#ffd9f0" stop-opacity=".35"/><stop offset="1" stop-color="#ffd9f0" stop-opacity="0"/></radialGradient>
+      <linearGradient id="mo-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".72" stop-color="#e3ebf4"/><stop offset=".72" stop-color="#d7e1ec"/><stop offset="1" stop-color="#f2f6fa"/></linearGradient>
+      <linearGradient id="mo-body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8f2338"/><stop offset=".38" stop-color="#5d1524"/><stop offset=".39" stop-color="#4a0f1c"/><stop offset="1" stop-color="#7a1e2f"/></linearGradient>
+      <linearGradient id="mo-brass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff3bf"/><stop offset=".5" stop-color="#d7a63c"/><stop offset="1" stop-color="#8a6415"/></linearGradient>
+      <linearGradient id="mo-shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".45" stop-color="#fff" stop-opacity=".75"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+      <linearGradient id="mo-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef3f8" stop-opacity=".3"/><stop offset=".7" stop-color="#eef3f8"/></linearGradient>
     </defs>
-    <rect width="480" height="360" fill="url(#sh-bg)"/>
-    <rect width="480" height="360" fill="url(#sh-spot)"/>
-    <g id="sh-pair">
-      <g transform="translate(60 150)">
-        <path d="M0 58 Q2 20 40 14 L96 8 Q120 -2 150 16 Q196 40 200 66 Q198 78 180 78 H14 Q0 76 0 58Z" fill="url(#sh-leather)"/>
-        <path d="M40 16 Q70 36 104 10" fill="none" stroke="#6a7080" stroke-width="2"/>
-        <path d="M60 22 Q86 24 100 12" fill="#000"/>
-        <path d="M112 22 Q150 20 184 52" fill="none" stroke="url(#sh-shine)" stroke-width="5" stroke-linecap="round"/>
-        <path d="M14 36 Q20 26 36 24" fill="none" stroke="url(#sh-shine)" stroke-width="3" stroke-linecap="round"/>
-        <rect x="10" y="72" width="44" height="12" rx="3" fill="#000"/>
+    <rect width="480" height="360" fill="url(#mo-bg)"/>
+    <g id="mo-car">
+      <path d="M78 196 h50 l18-44 h96 l10 44 h108 q26 0 30 20 v22 q0 10-12 10 H70 q-14 0-14-14 v-18 q0-20 22-20z" fill="url(#mo-body)"/>
+      <path d="M146 152 h96 l10 44 h-120z" fill="#2f3b52"/>
+      <path d="M150 158 h86 l7 32 h-104z" fill="#9db6d2"/>
+      <path d="M78 198 q90-14 300-2" fill="none" stroke="url(#mo-shine)" stroke-width="6" stroke-linecap="round"/>
+      <rect x="96" y="150" width="46" height="8" rx="4" fill="url(#mo-brass)"/>
+      <circle cx="372" cy="182" r="18" fill="url(#mo-brass)"/>
+      <circle cx="372" cy="182" r="11" fill="#fff8d8"/>
+      <circle cx="368" cy="178" r="4" fill="#fff"/>
+      <rect x="352" y="196" width="36" height="8" rx="4" fill="url(#mo-brass)"/>
+      <path d="M262 150 q22 6 30 22" fill="none" stroke="url(#mo-brass)" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="262" cy="148" r="14" fill="none" stroke="url(#mo-brass)" stroke-width="5"/>
+      <g fill="#1a1a1f">
+        <circle cx="140" cy="262" r="46"/><circle cx="356" cy="262" r="46"/>
       </g>
-      <g transform="translate(230 170)">
-        <path d="M0 58 Q2 20 40 14 L96 8 Q120 -2 150 16 Q196 40 200 66 Q198 78 180 78 H14 Q0 76 0 58Z" fill="url(#sh-leather)"/>
-        <path d="M60 22 Q86 24 100 12" fill="#000"/>
-        <path d="M112 22 Q150 20 184 52" fill="none" stroke="url(#sh-shine)" stroke-width="5" stroke-linecap="round"/>
-        <rect x="10" y="72" width="44" height="12" rx="3" fill="#000"/>
+      <g fill="#f2f4f7">
+        <circle cx="140" cy="262" r="30"/><circle cx="356" cy="262" r="30"/>
+      </g>
+      <g stroke="#b9c2cc" stroke-width="2">
+        ${Array.from({ length: 12 }, (_, i) => {
+          const a = (i * Math.PI) / 6;
+          const dx = Math.cos(a) * 28;
+          const dy = Math.sin(a) * 28;
+          return `<path d="M${(140 - dx).toFixed(1)} ${(262 - dy).toFixed(1)}L${(140 + dx).toFixed(1)} ${(262 + dy).toFixed(1)}"/><path d="M${(356 - dx).toFixed(1)} ${(262 - dy).toFixed(1)}L${(356 + dx).toFixed(1)} ${(262 + dy).toFixed(1)}"/>`;
+        }).join('')}
+      </g>
+      <g fill="url(#mo-brass)">
+        <circle cx="140" cy="262" r="9"/><circle cx="356" cy="262" r="9"/>
       </g>
     </g>
-    <g transform="translate(0 506) scale(1 -1)" opacity=".28"><use href="#sh-pair"/></g>
-    <circle cx="380" cy="60" r="3" fill="#fff"/><circle cx="96" cy="84" r="2" fill="#fff" opacity=".7"/><circle cx="420" cy="120" r="1.5" fill="#fff"/>
+    <g transform="translate(0 620) scale(1 -1)" opacity=".22"><use href="#mo-car"/></g>
+    <rect x="0" y="312" width="480" height="48" fill="url(#mo-fade)"/>
   </svg>`,
 
   mirror: `
@@ -452,32 +466,33 @@ export const ARTIFACTS = {
   </svg>`,
 
   /* 2026 ---------------------------------------------------------------- */
-  blocks: `
-  <svg viewBox="0 0 480 360" role="img" aria-label="Three soft alphabet blocks spelling BEN, the rest scattered">
+  paper: `
+  <svg viewBox="0 0 480 360" role="img" aria-label="A woven mat of coloured paper strips with a paper chain above it">
     <defs>
-      <radialGradient id="bl-bg" cx=".5" cy=".3" r=".9"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e9e6fb"/></radialGradient>
-      <linearGradient id="bl-a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd8c8"/><stop offset="1" stop-color="#f59e80"/></linearGradient>
-      <linearGradient id="bl-b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d9d4ff"/><stop offset="1" stop-color="#9a8ef0"/></linearGradient>
-      <linearGradient id="bl-c" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#cdeefb"/><stop offset="1" stop-color="#7cc3e4"/></linearGradient>
-      <filter id="bl-sh" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+      <radialGradient id="pa-bg" cx=".5" cy=".3" r=".9"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ece9fb"/></radialGradient>
+      <filter id="pa-sh" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#6b6883" flood-opacity=".22"/></filter>
     </defs>
-    <rect width="480" height="360" fill="url(#bl-bg)"/>
-    <ellipse cx="240" cy="300" rx="170" ry="18" fill="#6b6883" opacity=".25" filter="url(#bl-sh)"/>
-    ${[
-      ['B', 130, 216, -4, 'a'],
-      ['E', 214, 216, 3, 'b'],
-      ['N', 170, 134, -2, 'c'],
-      ['J', 330, 238, 18, 'a'],
-    ]
-      .map(
-        ([l, x, y, r, g]) => `
-      <g transform="rotate(${r} ${x + 38} ${y + 38})" ${l === 'J' ? 'opacity=".35"' : ''}>
-        <rect x="${x}" y="${y}" width="76" height="76" rx="18" fill="url(#bl-${g})"/>
-        <rect x="${x + 6}" y="${y + 6}" width="64" height="30" rx="14" fill="#fff" opacity=".35"/>
-        <text x="${x + 38}" y="${y + 53}" text-anchor="middle" ${SOFT} font-weight="700" font-size="42" fill="#fff">${l}</text>
-      </g>`,
-      )
-      .join('')}
+    <rect width="480" height="360" fill="url(#pa-bg)"/>
+    <g filter="url(#pa-sh)">
+      <g transform="rotate(-4 240 244)">
+        ${['#ffcbb6', '#d7d1ff', '#c6ecfa', '#ffe3a6', '#ffb7c8', '#cfe9c8']
+          .map((c, i) => `<rect x="${126 + i * 34}" y="156" width="28" height="176" rx="4" fill="${c}"/>`)
+          .join('')}
+        ${['#ffe3a6', '#c6ecfa', '#d7d1ff', '#ffcbb6', '#cfe9c8']
+          .map(
+            (c, i) => `<rect x="120" y="${170 + i * 34}" width="216" height="26" rx="4" fill="${c}" opacity=".95"/>
+            <rect x="${126 + ((i + 1) % 2) * 34}" y="${170 + i * 34}" width="28" height="26" fill="${['#ffcbb6', '#d7d1ff', '#c6ecfa', '#ffe3a6', '#ffb7c8', '#cfe9c8'][((i + 1) % 2) ? 1 : 0]}"/>
+            <rect x="${194 + ((i + 1) % 2) * 34}" y="${170 + i * 34}" width="28" height="26" fill="${['#c6ecfa', '#ffe3a6'][i % 2]}"/>
+            <rect x="${262 + ((i + 1) % 2) * 34}" y="${170 + i * 34}" width="28" height="26" fill="${['#ffb7c8', '#cfe9c8'][i % 2]}"/>`,
+          )
+          .join('')}
+      </g>
+    </g>
+    <g fill="none" stroke-width="12" stroke-linecap="round">
+      ${['#ffcbb6', '#d7d1ff', '#c6ecfa', '#ffe3a6', '#ffb7c8', '#cfe9c8', '#ffcbb6']
+        .map((c, i) => `<ellipse cx="${72 + i * 56}" cy="${72 + (i % 2) * 14}" rx="26" ry="17" stroke="${c}" transform="rotate(${i % 2 ? 12 : -12} ${72 + i * 56} ${72 + (i % 2) * 14})"/>`)
+        .join('')}
+    </g>
   </svg>`,
 
   nana: `

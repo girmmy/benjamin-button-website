@@ -16,10 +16,10 @@ const ICON = {
 const ICON_BG = { program: '#a51c30', uncle: '#ffc107', commission: '#546e7a', uniform: '#827717' };
 
 const STEPS = [
-  ['Commission received', 'Brigadier general, by letter from the War Department'],
-  ['Reported to camp', 'In the uniform from 1898, taken in twice'],
-  ['Turned away at the gate', 'The sentry saw a boy of about thirteen'],
-  ['Sent home', 'Roscoe drove down to collect him'],
+  ['Commission arrives', 'Brigadier-general, with orders to report immediately'],
+  ['Measured for a uniform', 'The clerk on Charles Street asks if he wants to play soldier'],
+  ['Camp Mosby, South Carolina', 'The sentry asks where he is going with the general’s duds'],
+  ['Escorted home', 'Roscoe arrives from Baltimore and takes the weeping general back'],
 ];
 
 export function markup(s) {

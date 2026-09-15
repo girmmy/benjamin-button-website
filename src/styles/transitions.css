@@ -1,7 +1,7 @@
 /* Era changes. Every value is driven by a scrubbed custom property, so scrolling back reverses them exactly. */
 
 .tr {
-  height: 280vh;
+  height: 220vh;
 }
 
 /* 1995 → 2001: the gray page flips away tile by tile, and a Flash preloader runs */
