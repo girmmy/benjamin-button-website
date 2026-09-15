@@ -1,0 +1,207 @@
+.rail {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  z-index: 55;
+  opacity: var(--rail-fade);
+  visibility: visible;
+}
+.rail__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 14px 8px 10px;
+}
+.rail__fig {
+  width: 30px;
+  height: 40px;
+  flex: none;
+}
+.rail__dials {
+  display: flex;
+  gap: 12px;
+  margin: 0;
+}
+.rail__dial {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.rail__dial dt {
+  font-size: 11px;
+  line-height: 1;
+}
+.rail__dial dd {
+  margin: 0;
+  display: flex;
+  gap: 1px;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.rail__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 12px;
+}
+.rail__current {
+  font-size: 12px;
+  line-height: 1;
+  white-space: nowrap;
+}
+.rail__ticks {
+  display: flex;
+  gap: 5px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.rail__ticks a {
+  display: grid;
+  place-items: center;
+  width: 14px;
+  height: 14px;
+}
+.rail__ticks a span {
+  display: block;
+  width: 10px;
+  height: 10px;
+}
+
+@media (max-width: 640px) {
+  .rail {
+    left: 8px;
+    right: 8px;
+    bottom: max(8px, env(safe-area-inset-bottom));
+  }
+  .rail__inner {
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .rail__current {
+    display: none;
+  }
+  .rail__nav {
+    padding-left: 0;
+  }
+}
+
+/* 1995: gray bevel box and a hit counter */
+body[data-era='1995'] .rail__inner {
+  background: #c0c0c0;
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px #808080, inset 2px 2px #dfdfdf;
+  font-family: 'Times New Roman', Times, serif;
+}
+body[data-era='1995'] .rail__fig { color: #000; }
+body[data-era='1995'] .rail__dial dt { font-size: 12px; }
+body[data-era='1995'] .rail__digit {
+  display: inline-block;
+  min-width: 13px;
+  padding: 3px 2px 2px;
+  text-align: center;
+  font: 700 15px/1 'Courier New', Courier, monospace;
+  color: #fff;
+  background: linear-gradient(#000 49%, #2a2a2a 50%, #000);
+}
+body[data-era='1995'] .rail__nav { border-left: 1px solid #808080; box-shadow: inset 1px 0 #fff; }
+body[data-era='1995'] .rail__current { color: #0000ee; text-decoration: underline; font-size: 13px; }
+body[data-era='1995'] .rail__ticks a span {
+  background: #c0c0c0;
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff;
+}
+body[data-era='1995'] .rail__ticks a[aria-current] span { background: #000080; box-shadow: inset 1px 1px #0a0a0a, inset -1px -1px #fff; }
+
+/* 2001: silver panel with a green LCD */
+body[data-era='2001'] .rail__inner {
+  background: linear-gradient(#f2f3f8, #c9ccd9 60%, #b3b7c8);
+  border: 1px solid #5d6484;
+  box-shadow: inset 1px 1px #fff, 3px 3px 0 rgba(31, 42, 107, 0.35);
+  font-family: Silkscreen, Verdana, sans-serif;
+  color: #1f2a6b;
+}
+body[data-era='2001'] .rail__fig { color: #1f2a6b; }
+body[data-era='2001'] .rail__dial dt { font-size: 9px; text-transform: lowercase; }
+body[data-era='2001'] .rail__dial dd {
+  padding: 3px 4px;
+  background: #0d1a10;
+  box-shadow: inset 1px 1px #000, inset -1px -1px #53607e;
+}
+body[data-era='2001'] .rail__digit {
+  font: 400 15px/1 Silkscreen, monospace;
+  color: #8cf55c;
+  text-shadow: 0 0 6px rgba(140, 245, 92, 0.7);
+}
+body[data-era='2001'] .rail__nav { border-left: 1px dotted #5d6484; }
+body[data-era='2001'] .rail__current { font-size: 10px; text-transform: lowercase; }
+body[data-era='2001'] .rail__ticks a span { background: #fff; border: 1px solid #5d6484; }
+body[data-era='2001'] .rail__ticks a[aria-current] span { background: #ff9900; }
+
+/* 2007: glossy capsule */
+body[data-era='2007'] .rail__inner {
+  border-radius: 16px;
+  background: linear-gradient(#ffffff, #eef4fb 50%, #e1ebf6 51%, #f4f8fc);
+  border: 1px solid #b6c8dd;
+  box-shadow: 0 8px 22px rgba(20, 70, 130, 0.22), inset 0 1px #fff;
+  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #3d4a5c;
+}
+body[data-era='2007'] .rail__fig { color: #1f7fd1; }
+body[data-era='2007'] .rail__dial dt { color: #7a8ba1; font-size: 10px; }
+body[data-era='2007'] .rail__digit {
+  font: 700 21px/1 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.5px;
+  background: linear-gradient(#5fb4f0, #1f6fc1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 1px 0 #fff);
+}
+body[data-era='2007'] .rail__nav { border-left: 1px solid #d3deea; }
+body[data-era='2007'] .rail__current { font-weight: 700; font-size: 12px; }
+body[data-era='2007'] .rail__ticks a span {
+  border-radius: 50%;
+  background: linear-gradient(#f3f6fa, #c7d3e0);
+  box-shadow: inset 0 0 0 1px #a9b8c9;
+}
+body[data-era='2007'] .rail__ticks a[aria-current] span {
+  background: radial-gradient(circle at 50% 30%, #bfe4ff, #2d8fe0 60%, #1766b5);
+  box-shadow: inset 0 0 0 1px #145aa0;
+}
+
+/* 2015: flat card */
+body[data-era='2015'] .rail__inner {
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), 0 1px 18px rgba(0, 0, 0, 0.12);
+  font-family: Roboto, Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+}
+body[data-era='2015'] .rail__fig { color: #a51c30; }
+body[data-era='2015'] .rail__dial dt { color: rgba(0, 0, 0, 0.54); font-weight: 500; }
+body[data-era='2015'] .rail__digit { font: 300 24px/1 Roboto, Arial, sans-serif; color: #a51c30; }
+body[data-era='2015'] .rail__nav { border-left: 1px solid rgba(0, 0, 0, 0.12); }
+body[data-era='2015'] .rail__current { font-weight: 500; font-size: 13px; }
+body[data-era='2015'] .rail__ticks a span { width: 8px; height: 8px; border-radius: 50%; background: rgba(0, 0, 0, 0.2); }
+body[data-era='2015'] .rail__ticks a[aria-current] span { background: #a51c30; transform: scale(1.3); }
+
+/* 2026: glass */
+body[data-era='2026'] .rail__inner {
+  border-radius: 999px;
+  padding: 8px 20px 8px 14px;
+  background: rgba(255, 255, 255, 0.38);
+  -webkit-backdrop-filter: blur(22px) saturate(1.3);
+  backdrop-filter: blur(22px) saturate(1.3);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.7), 0 20px 40px -24px rgba(35, 33, 58, 0.5);
+  font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+  color: #23213a;
+}
+body[data-era='2026'] .rail__fig { color: #23213a; }
+body[data-era='2026'] .rail__dial dt { color: #6b6883; }
+body[data-era='2026'] .rail__digit {
+  font: 250 26px/1 'Bricolage Grotesque', system-ui, sans-serif;
+  font-variation-settings: 'opsz' 96;
+}
+body[data-era='2026'] .rail__nav { border-left: 1px solid rgba(35, 33, 58, 0.12); }
+body[data-era='2026'] .rail__ticks a span { width: 6px; height: 6px; border-radius: 50%; background: rgba(35, 33, 58, 0.22); }
+body[data-era='2026'] .rail__ticks a[aria-current] span { background: #23213a; }
