@@ -23,6 +23,7 @@ export function markup(s) {
         <div class="s1-hero">
           <h1 class="s1-title" id="s1-title">${s.title}</h1>
           <p class="s1-byline"><i>The Curious Case of Benjamin Button</i>, after F. Scott Fitzgerald (1922)</p>
+          <p class="s1-authors">By Gimmy, Ayaan, Khaider, and Robert</p>
           <hr class="s1-hr" />
           <table class="s1-photo" cellspacing="0">
             <tr>
